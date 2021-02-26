@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;800&display=swap');
+/* font-family: 'Karla', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/* font-family: 'Lora', serif; */
+
+@font-face{
+    font-family:GTPressuraMono;
+    src:url(/fonts/GTPressuraMono.woff) format("woff"),
+    url(/fonts/GTPressuraMono.woff2) format("woff2");
+    font-weight:400;
+    font-style:normal;font-display:swap
+}
+    
+@font-face{
+    font-family:GTPressuraMono-Light;
+    src:url(/fonts/GTPressuraMono-Light.woff) format("woff"),
+    url(/fonts/GTPressuraMono-Light.woff2) format("woff");
+    font-weight:400;font-style:normal;
+    font-display:swap
+}
+@font-face{font-family:Plaak-SemicondensedRegular;
+    src:url(/fonts/Plaak-SemicondensedRegular.woff) format("woff"),
+    url(/fonts/Plaak-SemicondensedRegular.woff2) format("woff2");
+    font-weight:400;font-style:normal;
+    font-display:swap
+}
+@font-face{font-family:Plaak-CondensedBold;
+    src:url(/fonts/Plaak-CondensedBold.woff) format("woff"),
+    url(/fonts/Plaak-CondensedBold.woff2) format("woff2");
+    font-weight:400;font-style:normal;
+    font-display:swap
+}
+
+html,body{margin:0;}
+p,figure,h1,h2,h3,h4,h5,h6{margin:0;}
+ul,li{list-style: none; margin:0; padding:0;}
+*{
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+img{width:100%; vertical-align:top;}
+a{
+    text-decoration:none;
+
+}
+
