@@ -1,0 +1,1 @@
+$((function(){$("footer").load("inc.html footer > article")}));export default main();
