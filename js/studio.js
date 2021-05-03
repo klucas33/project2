@@ -30,10 +30,30 @@ $(function(){
   setTimeout(function(){
     $('.page_hidden div').css({'transform':'translateY(0)'})
     $('.page_hidden svg').css({'transform':'translate(0)'})
-  },500)
+  },250)
   setTimeout(function(){
     $('.page_hidden').css({'z-index':'0'})
     $('.page_hidden div').css({'transform':'translateY(-100%)'})
     
-  },1050)
+  },800)
+
+  var gold = $('.logo li')
+  var silver = $('.des li')
+  
+  $('.logo li').on('click',function(){
+    var bronze = $(this).index()
+    $(this).addClass('active');
+      gold.not($(this)).removeClass('active')
+
+    silver.removeClass('show')
+    $('.des li').eq(bronze).addClass('show')
+      
+  })
+  
+        
+  
+
+
+
+
 })

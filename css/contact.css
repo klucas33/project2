@@ -325,11 +325,14 @@ form button{
     padding:0 3.125rem;
     background-color: #303030;
     margin-right:52%;
+    transition: .5s;
 }
 form button:hover{
     background-color:#cfd3d1;
     
+    
 }   
+
 form button div{
     display:inline-block;
     margin-right: .625rem;
@@ -518,4 +521,26 @@ footer{
     text-transform: uppercase;
     background-color: #303030;
 
+}
+@media(max-width:480px){
+    body{width:100%;}
+    header{padding:2rem 3rem;
+            height:3rem;
+            }
+    header:before{
+        content:'';
+        position:absolute;
+        top:1.375rem;
+        right:.75rem;
+        bottom:1.375rem;
+        left:.75rem;
+        border:1px solid #303030;
+        
+    }
+    header > span{
+        display:none !important;
+    }
+    header > a{
+        display:none;
+    }
 }
