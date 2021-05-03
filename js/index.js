@@ -15,4 +15,11 @@ $(function(){
             $('.click').addClass('what');
         })
     }
+
+    $('.button_icon').on('click',function(){
+        $('.mobile').addClass('reveal')
+    })
+    $('.quake svg').on('click',function(){
+        $('.mobile').removeClass('reveal')
+    })
 })
