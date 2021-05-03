@@ -81,6 +81,7 @@ header{z-index: 2;
     align-items: center;
     background-color: transparent;
     box-sizing:content-box;
+    /* background-image:url('../imgs/paper-texture-wide.png'); */
 }
 .line_top_left{display:block;
     width:calc((100% - 15.875rem)/2);
@@ -266,6 +267,7 @@ header{z-index: 2;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image:url('../imgs/paper-texture-wide.png');
 }
 .dark div:nth-of-type(1){
     width:65.25rem;
