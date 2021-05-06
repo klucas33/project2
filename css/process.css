@@ -309,6 +309,7 @@ header{z-index: 2;
     color:#e6e2dd;
     text-align: center;
 }
+.dark .pop{display:none;}
 .dark div:nth-of-type(2){
     position:absolute;
     left:50%;
@@ -810,6 +811,20 @@ header > span{
 }
 .dark div h2{font-size:2rem;
                 letter-spacing: 10px;}
+.dark .pop{display:block;
+            margin-top:30rem;}
+.pop li button{display:block;
+                margin:0 auto;
+                font-family:Plaak-SemicondensedRegular,sans-serif;
+                font-size:.9375rem;
+                line-height:3.6875rem;
+                letter-spacing: .075em;
+                text-align: center;
+                color:#e6e2dd;
+                text-decoration: none;
+                background:none;
+                border:none;
+            }
 .dark div:nth-of-type(2) p{
     font-size:3rem;
 }
