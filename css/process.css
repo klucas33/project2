@@ -269,12 +269,12 @@ header{z-index: 2;
     flex-direction: column;
     background-image:url('../imgs/paper-texture-wide.png');
 }
-.dark div:nth-of-type(1){
+.dark > div:nth-of-type(1){
     width:65.25rem;
     margin:0 auto;
     border:1px solid #f8bebe;
 }
-.dark div h2{
+.dark > div h2{
     font-size:1.875rem;
     line-height:5.125rem;
     position:relative;
@@ -285,7 +285,7 @@ header{z-index: 2;
     text-transform: uppercase;
     text-align: center;
 }
-.dark div h2::after{
+.dark > div h2::after{
     content:'';
     position:absolute;
     right:0;
@@ -297,7 +297,7 @@ header{z-index: 2;
     background-repeat: no-repeat;
     background-position: 0 100%;
 }
-.dark div h1{
+.dark > div h1{
     font-size:12.125rem;
     line-height:18.75rem;
     width:100%;
@@ -310,7 +310,7 @@ header{z-index: 2;
     text-align: center;
 }
 .dark .pop{display:none;}
-.dark div:nth-of-type(2){
+.dark > div:nth-of-type(2){
     position:absolute;
     left:50%;
     bottom:3.125rem;
@@ -319,7 +319,7 @@ header{z-index: 2;
     margin:1.875rem 0;
     text-align: center;
 }
-.dark div:nth-of-type(2) p{
+.dark > div:nth-of-type(2) p{
     margin-bottom:1.875rem;
     font-size:.75rem;
     display:block;
@@ -767,7 +767,7 @@ header > span{
     width: 100%;
 }
 .apple p{
-    font-size:2.5375rem;
+    font-size:2rem;
     margin-left:1rem;
     color:#e6e2dd;
     text-align: center;
@@ -806,18 +806,18 @@ header > span{
 .side{display:none;}
 .dark{display:block;
         margin-top:5rem;}
-.dark div:nth-of-type(1){
+.dark > div:nth-of-type(1){
     width:93%;
 }
-.dark div h2{font-size:2rem;
+.dark > div h2{font-size:2rem;
                 letter-spacing: 10px;}
 .dark .pop{display:block;
             margin-top:30rem;}
 .pop li button{display:block;
                 margin:0 auto;
                 font-family:Plaak-SemicondensedRegular,sans-serif;
-                font-size:.9375rem;
-                line-height:3.6875rem;
+                font-size:3.5375rem;
+                line-height:9.6875rem;
                 letter-spacing: .075em;
                 text-align: center;
                 color:#e6e2dd;
@@ -825,8 +825,10 @@ header > span{
                 background:none;
                 border:none;
             }
-.dark div:nth-of-type(2) p{
-    font-size:3rem;
+.pop li button div{display:inline-block;
+                    vertical-align: bottom;}
+.dark > div:nth-of-type(2) p{
+    font-size:2rem;
 }
 .dark svg{width:1.5rem;
             height:6.4375rem;
