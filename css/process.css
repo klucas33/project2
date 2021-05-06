@@ -865,11 +865,31 @@ main{position:relative;}
         }
 .sub ul{font-size:2rem;
         line-height:4rem;
-        margin-top:9rem;}
+        margin:9rem 0;}
 .sub ul li{width:39%;}
 .text::before{display:none;}
 .whole .gold::after{left:0;}
-.hid{display:block;}
+.hid{flex-direction:column;
+    }
+.hid div{
+    width:100% !important;
+}
+.hid div img{width:40rem;}
+.hid div:nth-of-type(1){
+    height:60%
+}
+.hid div:nth-of-type(2){
+    padding-left:10rem;
+    height:40%;
+}
+.hid div article h2{
+    font-size:6rem;
+    line-height:7rem;
+    width:90%;
+    margin-bottom:11rem;
+}
+.hid div article a span{padding:5rem 6rem;
+                        font-size:2rem;}
 .down{
     border-top:4px solid #303030;
     display:flex;
