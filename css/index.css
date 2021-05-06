@@ -10,6 +10,7 @@ body{background-color: #e6e2dd;
     margin:0;
     padding:0;
     }
+body.alpha{overflow:hidden}
 
 a{color:#030303;
     text-decoration: none;}
@@ -141,17 +142,27 @@ button{position:relative;
         margin: 0 0 0 auto;
         display:none;}
 .main{}
+.main::before{
+    content:'';
+    position:absolute;
+    top:0; left:0;
+    width:100%;
+    height:100%;
+    background-image:url('/imgs/paper-texture-narrow.png');
+    background-size:100% auto;
+    background-repeat: no-repeat;
+}
 .main .text{padding:0 4.875rem;
             max-width:100rem;
             height:auto;
             margin:0 auto 3.6875rem;
 }
+.move_clone{display:none;}
 .main .text svg{display:block;
                 height: 100%;
                 fill:#303030;
 
 }
-.move_clone svg{display: none !important;;}
 .nav{text-align: center;
     margin:2.8125rem 0;
     font-size:0;
@@ -714,14 +725,16 @@ footer{
     height:100%;
     transform:translateY(-100%);
     transition: 1s;
+    top:0;
+    /* overflow:auto; */
 }
 .mobile.reveal{
     transform:translateY(0);
 }
 
-.lock{background-color: #303030;;
+.lock{
     position:fixed;
-    top:0;
+    top:2.5%;
     left:0;
     overflow-x:hidden;
     overflow-y:auto;
@@ -755,14 +768,17 @@ footer{
             height:100%;
             padding:0 .75rem;}
 .lock ul{overflow:hidden;
-        font-size:0;}
+        font-size:0;
+        margin:5rem 0;}
 .lock ul li{display:block;
-            border-bottom:1px solid #e6e2dd;}
-.lock ul li:first-of-type{border-top:1px solid #e6e2dd;}
+            border-bottom:5px solid #e6e2dd;}
+.lock ul li:first-of-type{border-top:5px solid #e6e2dd;}
 .lock ul li a{position:relative;
-            display:block;
+            display:flex;
+            align-items: center;
+            justify-content: center;
             width:100%;
-            height:10.625rem;
+            height:20.625rem;
             background-color:#303030;
             text-align:center;}
 .lock ul li a:hover{background-color:#f8bebe;
@@ -797,7 +813,7 @@ footer{
     header{width:93%;
             height:7.25rem;
             padding:1.375rem .75rem;
-            
+            z-index:1000;
             }
     header::before{
         content:'';
@@ -810,6 +826,9 @@ footer{
 
 
     }
+    header.change::before{
+        border:none;
+    }
     header > span{
         display:none!important;
     }
@@ -818,6 +837,9 @@ footer{
         margin:0;
         padding:2% 4% 0 0;
         
+    }
+    .header_logo.awesome{
+        display:none
     }
     .header_logo::before{
         content:'';
@@ -844,6 +866,7 @@ footer{
         text-transform: uppercase;
         letter-spacing:.25rem;
     }
+    .apple.bad{display:none;}
     .apple p{
         font-size:1.8375rem;
         margin-left:1rem;
@@ -851,8 +874,12 @@ footer{
     .pear{
         display:none;
     }
-    .pine{display:none;}
-
+    .pine{display:none;
+        color:#e6e2dd;
+        font-size:2rem;
+        width:100%;
+        text-align: center;}
+    .pine.good{display:block;}
     .button_hid{
         display:block;
         outline:none;
@@ -901,17 +928,23 @@ footer{
         background-size:100% auto;
         background-repeat: no-repeat;
     }
-    .text{position:relative;
+    .main .text{position:relative;
         display:block;
-        width:100vw;
-        height: 9.5625rem !important;
-        margin: 0 !important;; padding:0;}
+        overflow:hidden;
+        height: 12.5625rem !important;
+        margin-bottom: 3.875rem; padding:0;}
     .move{position:absolute;
             top:0; left:0;
             height:100%;
             
             }
-    .text svg{
+    .move_clone{position:absolute;
+            top:0; left:0;
+            height:100%;
+            display:none;
+        }
+    .move_clone.act{display:block;}        
+    .brand{
         display:block;
         height:100%;
         padding:0 .75rem;
@@ -986,6 +1019,7 @@ footer{
     .wap div a svg{
         position:unset;
         width:100%;
+        height:1.5rem;
     }
     .wap div a{
         position:unset;
@@ -1135,5 +1169,6 @@ footer{
         width:3rem;
         height:1.5rem
     }
+    .two .three{font-size:2rem;}
     
 }
