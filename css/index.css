@@ -726,7 +726,7 @@ footer{
     transform:translateY(-100%);
     transition: 1s;
     top:0;
-    /* overflow:auto; */
+    overflow:auto;
 }
 .mobile.reveal{
     transform:translateY(0);
