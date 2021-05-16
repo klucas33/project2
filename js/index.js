@@ -36,22 +36,24 @@ $(function(){
         }
     })
 
-    setTimeout(function(){
-        var num = 0
-        var width = $('.text').find('div').width()
-        var cold = width * 5;
-        
-        setInterval(function(){
-          num +=.5;
-          if(cold<num)num=0;
-          $('.text div').css('transform','translateX(-'+num+'px)')
-        },10)
-      },20)
+    
 
     function setResponsive(){
         $(document).ready(function(){
             if(matchMedia('only screen and (max-width:480px)').matches){
                 $('.move_clone').addClass('act')
+                
+                setTimeout(function(){
+                    var num = 0
+                    var width = $('.text').find('div').width()
+                    var cold = width * 5;
+                    
+                    setInterval(function(){
+                      num +=.5;
+                      if(cold<num)num=0;
+                      $('.text div').css('transform','translateX(-'+num+'px)')
+                    },10)
+                  },20)
             }
         })
     
