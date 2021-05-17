@@ -1285,6 +1285,7 @@ main{
     overflow:hidden;
     height:100%;
     margin-right:.75rem;
+    width:100% !important;
 }
 .des li::after{
     content:'';
@@ -1377,10 +1378,14 @@ main{
         padding:0 .75rem;
         text-align: center;
         position: absolute;
-        bottom:-26%;}
+        bottom:-50%;}
+.logo li{border:1px solid #303030 !important;}
 .logo li button{
-    width:2.25rem;
-    height:2.25rem;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
 }
 .logo li::after{
     display:none !important;
@@ -1438,6 +1443,7 @@ main{
 .wap div a svg{
     position:unset;
     width:100%;
+    height:1rem;
 }
 .wap div a{
     position:unset;
