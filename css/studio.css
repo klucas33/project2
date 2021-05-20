@@ -1273,7 +1273,7 @@ main{
     touch-action:pan-y;
     cursor: grab;
     user-select:none;
-    z-index:1004;
+    z-index:1;
     transform:translate3d(0px, 0px, 0px);
     position:relative;
     height:32.0625rem;

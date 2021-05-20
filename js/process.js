@@ -24,8 +24,26 @@ $(function(){
 
         }
 
-        
-
        
+      })
+      $('.side ul li:nth-of-type(2) button').on('click',function(){
+        let first = $('.gold:nth-of-type(1)').offset().top;
+        $('body,html').animate({'scrollTop':first},500)
+      })
+      $('.side ul li:nth-of-type(3) button').on('click',function(){
+        let second = $('.gold:nth-of-type(2)').offset().top;
+        $('body,html').animate({'scrollTop':second},500)
+      })
+      $('.side ul li:nth-of-type(4) button').on('click',function(){
+        let third = $('.gold:nth-of-type(3)').offset().top;
+        $('body,html').animate({'scrollTop':third},500)
+      })
+      $('.side ul li:nth-of-type(5) button').on('click',function(){
+        let fourth = $('.gold:nth-of-type(4)').offset().top;
+        $('body,html').animate({'scrollTop':fourth},500)
+      })
+      $('.side ul li:nth-of-type(6) button').on('click',function(){
+        let fifth = $('.gold:nth-of-type(5)').offset().top;
+        $('body,html').animate({'scrollTop':fifth},500)
       })
 })
