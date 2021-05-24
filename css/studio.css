@@ -1202,8 +1202,11 @@ main{
         justify-content: space-between;
         }
 .group button{
-    top:31%;
+    top:32%;
     left:45%;
+}
+.group button:nth-last-of-type(2){
+    top:80%;
 }
 .him{
     display:block;

@@ -51,7 +51,7 @@ $(function(){
   })
   $(document).ready(function(){
     if(matchMedia('only screen and (max-width:480px)').matches){
-      $( '.group button' ).clone().appendTo( '.group' );
+      $( '.group button' ).clone().appendTo( '.group:last' );
     }
   })
   
