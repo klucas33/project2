@@ -49,11 +49,15 @@ $(function(){
     $('.des li').eq(bronze).addClass('show')
       
   })
-  $(document).ready(function(){
+  function setResponsive(){
     if(matchMedia('only screen and (max-width:480px)').matches){
       $( '.group button' ).clone().appendTo( '.group:last' );
     }
-  })
+  }
+  setResponsive();
+  
+
+  
   
         
   
