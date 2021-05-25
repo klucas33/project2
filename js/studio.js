@@ -54,7 +54,7 @@ $(function(){
       $( '.group button' ).clone().appendTo( '.group:last' );
     }
   }
-  setResponsive();
+  setResponsive()
   
 
   
