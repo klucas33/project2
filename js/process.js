@@ -85,4 +85,10 @@ $(function(){
       }
 
       setResponsive()
+
+
+      $(document).ready(function(){
+        $('.video').load();
+      })
+
 })
