@@ -59,5 +59,8 @@ $(function(){
     
     }
     setResponsive()
+
+   
+    
       
 })

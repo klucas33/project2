@@ -33,9 +33,10 @@ $(function(){
           if(cold<num)num=0;
           $('.same:even a p').css('transform','translateX(-'+num+'px)')
           $('.same:odd a p').css('transform','translateX('+num+'px)')
-          console.log(cold)
         },10)
-      },20)
+      },100)
+
+      
       
 
 
